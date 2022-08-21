@@ -6,7 +6,6 @@
 }
 .lista{
     margin: auto;
-    background-color: aqua;
 }
 .box{
     display: flex;
@@ -17,11 +16,15 @@
     margin: 20px 20px auto;
     height: 500px;
     width: 450px;
-    border: 1px solid rgb(61, 61, 61);
+    border: 3px solid rgb(116, 116, 116);
+    border-radius: 10px;
     justify-content: center;
     text-align: center;
-    color: rgb(0, 0, 0);
-    background-image: linear-gradient(rgb(255, 212, 231),white);
+    color: rgb(207, 207, 207);
+    -webkit-box-shadow: -11px 10px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -11px 10px 5px -4px rgba(0,0,0,0.75);
+    box-shadow: -11px 10px 5px -4px rgba(0,0,0,0.75);
+
 }
 .nome{
     position: relative;
@@ -44,7 +47,11 @@
 .informações{
     border-radius: 20px;
     color: black;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.349);
     height: 50%; 
 
+}
+.especifico p{
+    margin: 10px 0 auto;
+    justify-content: left;
 }

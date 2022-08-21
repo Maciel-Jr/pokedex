@@ -1,0 +1,2 @@
+# pokedex
+pokedex não pronta

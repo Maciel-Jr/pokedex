@@ -4,6 +4,19 @@
     box-sizing: border-box;
     font-family: 'Press Start 2P', cursive;
 }
+a{
+    text-decoration: none;
+}
+.cabeça{
+    text-align: center;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.671);
+    color: black;
+    width: 100%;
+    margin: 0;
+}
 .lista{
     margin: auto;
 }
@@ -54,4 +67,7 @@
 .especifico p{
     margin: 10px 0 auto;
     justify-content: left;
+}
+form{
+    text-align: center;
 }

@@ -5,7 +5,8 @@ function chamar(){
     fetch('https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0')
     .then(response => response.json())
     .then(pokemon=> {
-        for(let i=0; i < 42; i++){
+        console.log(pokemon);
+        for(let i=0; i <100; i++){
            
             
             fetch(pokemon.results[i].url)
@@ -38,6 +39,7 @@ function chamar(){
                                     </div>
                                 </div>`;
             
+            
                 
             });
             //ate aqui so o nome e imagem;
@@ -48,7 +50,7 @@ function chamar(){
                 fetch(cor_api)
                 .then(response => response.json())
                 .then(pokemon_color=> {
-                    console.log(pokemon_color.color.name);
+                    
                     cor = pokemon_color.color.name;
                     body.innerHTML += `
                     <style>
@@ -56,8 +58,10 @@ function chamar(){
                             background-image: linear-gradient(`+cor+`, white);
                         }
                     </style>
-                    `;       
+                    `;    
+                      
             })
+
             })
                 
             

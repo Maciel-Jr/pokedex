@@ -8,10 +8,10 @@ function api(){
     fetch('https://pokeapi.co/api/v2/pokemon/'+pesquisa+'')
             .then(response => response.json())
             .then(pokemon_url=> {
-                console.log(pesquisa);
+                
                 console.log(pokemon_url);
                 
-                
+                    
                     let imagem = pokemon_url.sprites.other.dream_world.front_default;
                     let tipo = pokemon_url.types[0].type.name;
                     let HP = pokemon_url.stats[0].base_stat;
@@ -20,7 +20,7 @@ function api(){
                     let special_attack = pokemon_url.stats[3].base_stat;
                     let special_defense = pokemon_url.stats[4].base_stat;
                     let speed = pokemon_url.stats[5].base_stat;
-                    box.innerHTML =`<div class="pokedex-box">
+                    box.innerHTML += `<div class="pokedex-box">
                                         <div class="nome"><h3>`+pokemon_url.name+`</h3></div>
                                         <div class="imagen-pokemon">
                                             <img src="`+imagem+`">
@@ -44,7 +44,7 @@ function api(){
                                     fetch(pokemon_url.species.url)
                                     .then(response => response.json())
                                     .then( cor =>{
-                                        console.log(cor);
+                                        
                                         let color_p = cor.color.name;
                                         body.innerHTML += `
                                                 <style>
@@ -58,5 +58,3 @@ function api(){
             
             })}
          
-
-api();

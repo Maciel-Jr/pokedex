@@ -6,7 +6,7 @@ function chamar(){
     .then(response => response.json())
     .then(pokemon=> {
         console.log(pokemon);
-        for(let i=0; i <100; i++){
+        for(let i=0; i <7; i++){
            
             
             fetch(pokemon.results[i].url)
